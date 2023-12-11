@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <ul className="nav-list">
-        <li><Link to="/home">Home</Link></li>
+        <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         {role ? (
           <>

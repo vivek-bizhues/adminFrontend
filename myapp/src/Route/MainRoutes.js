@@ -10,7 +10,7 @@ import AdminHome from '../components/AdminHome';
 const MainRoutes = () => {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/adminhome" element={<AdminHome />} />
       <Route path="/about" element={<About />} />
       <Route path="/login" element={<Login />} />

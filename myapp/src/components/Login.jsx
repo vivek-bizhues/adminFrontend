@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/login', {
+      const response = await axios.post('http://localhost:5000/user/login', {
         username,
         password,
       });
@@ -20,7 +20,7 @@ const Login = () => {
       // Save the role to localStorage
       localStorage.setItem('role', role);
       if(role==="user"){
-          navigate("/home")
+          navigate("/")
       }else{
           navigate("/adminhome");
         }

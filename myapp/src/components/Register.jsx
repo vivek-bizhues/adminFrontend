@@ -10,13 +10,13 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post('http://localhost:5000/register', {
+      await axios.post('http://localhost:5000/user/register', {
         username,
         password,
       });
 
       console.log('User registered successfully');
-      navigate("/home")
+      navigate("/login")
     } catch (error) {
       console.error('Registration failed:', error.response.data.error);
     }
